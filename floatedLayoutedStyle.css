@@ -1,0 +1,48 @@
+/*
+FOUNDATION
+*/
+
+:root{
+    box-sizing: border-box;
+}
+*,
+::after,
+::before{
+    box-sizing: inherit;
+}
+body * + * {
+    margin-top:1.5em;
+
+}
+
+/*
+GENERIC
+*/
+
+body{
+    background: #bbb;
+    font-family: Arial, sans-serif;
+}
+
+header,
+footer{
+    background-color: #0072b0 ;
+    color:white;
+    padding: .5em 1.5em;
+
+}
+
+footer{
+    font-size: larger;
+}
+
+main{
+    background-color: #ffffff;
+    padding: 0 1.5em 1.5em 1.5em;
+}
+
+header,
+footer,
+main{
+    border-radius: .5em;
+}
