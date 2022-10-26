@@ -43,6 +43,42 @@ main{
 
 header,
 footer,
-main{
+main,
+article{
     border-radius: .5em;
+}
+
+article{
+    width:calc(50% - 1.5em/2);
+    float:left;
+    background-color: #bbb;
+}
+
+/*
+CLEARFIX
+*/
+
+section::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* 
+MARGIN COLLAPSE 
+*/
+
+div.articles :nth-child(2n+1)
+{
+    margin-right:1.5em;
+}
+
+div.articles :first-child
+{
+    margin-top:1.5em;
+}
+
+section::before{
+    display: table;
+    content: "";
 }
